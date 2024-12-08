@@ -20,7 +20,7 @@ class ConnectionHandler(logging.Handler):
     def emit(self, record):
         for X in ["OSErro", "socket"]:
             if X in record.getMessage():
-                os.system(f"kill -9 {os.getpid()} && python3 -m PyroUbot")
+                os.system(f"kill -9 {os.getpid()} && python3 -m bot")
 
 
 logger = logging.getLogger()
