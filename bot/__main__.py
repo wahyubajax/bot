@@ -2,7 +2,7 @@ import os
 import asyncio
 from pyrogram import Client
 from importlib import import_module
-from pyrogram import Yuu, Bot
+
 async def main():
     await Bot.start()
     await Yuu.starr()
