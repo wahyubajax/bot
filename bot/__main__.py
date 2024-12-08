@@ -1,13 +1,12 @@
 import os
 import asyncio
-
+from importlib import import_module
 from bot import Yuu, Bot
 
 
 async def main():
     await Yuu.start()
     await Bot.start()
-    await loadPlugins()
     os.system("rm -rf *session*")
     await asyncio.Event().wait()
 
