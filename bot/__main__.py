@@ -1,5 +1,6 @@
 import os
 import config
+from bot import Yuu , Bot
 
 async def main():
     await Bot.start()
