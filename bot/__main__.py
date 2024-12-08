@@ -10,7 +10,7 @@ async def main():
     await pyrogram.idle()
     await asyncio.gather(*tasks, Yuu.start(), Bot.start())
 
-print(start)
+print("start")
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop_policy().get_event_loop()
