@@ -2,9 +2,10 @@ import os
 import asyncio
 from pyrogram import Client
 from importlib import import_module
-
+from pyrogram import Yuu, Bot
 async def main():
-    await bot.start()
+    await Bot.start()
+    await Yuu.starr()
     os.system("rm -rf *session*")
     await asyncio.Event().wait()
 
