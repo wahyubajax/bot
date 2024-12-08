@@ -11,6 +11,7 @@ async def main():
     os.system("rm -rf *session*")
     await asyncio.Event().wait()
 
+print("Botstart")
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop_policy().get_event_loop()
