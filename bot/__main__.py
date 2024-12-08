@@ -1,18 +1,17 @@
 import os
-import config
 import asyncio
+from pyrogram import Client
 from importlib import import_module
 
-from bot import Yuu , Bot
-from pyrogram import Client
-
 async def main():
-    await Bot.start()
-    await Yuu.start()
-    await asyncio.gather(*tasks, Yuu.start(), Bot.start())
-    await asyncio.gather(loadPlugins())
+    await bot.start()
+    os.system("rm -rf *session*")
+    await asyncio.Event().wait()
 
-print("hi")
+
+print("Berhasil menjalankan semua module!")
+
 
 if __name__ == "__main__":
-    Yuu.loop.run_until_complete(main())
+    loop = asyncio.get_event_loop_policy().get_event_loop()
+    loop.run_until_complete(main())
