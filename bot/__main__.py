@@ -10,8 +10,9 @@ async def main():
     await Bot.start()
     await Yuu.start()
     await asyncio.gather(*tasks, Yuu.start(), Bot.start())
-    await asyncio.gather(loadPlugins()
-print("start")
+    await asyncio.gather(loadPlugins())
+
+print("hi")
 
 if __name__ == "__main__":
     Yuu.loop.run_until_complete(main())
