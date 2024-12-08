@@ -13,6 +13,8 @@ FORMAT = "[Yuu]: %(message)s"
 
 logging.basicConfig(level=logging.INFO, handlers=[logging.FileHandler('logs.txt'),
                                                     logging.StreamHandler()], format=FORMAT)
+MODULE = []
+
 class Yuu(Client):
     def __init__(self, **kwargs):
         super().__init__(**kwargs, parse_mode=ParseMode.HTML)
