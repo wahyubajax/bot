@@ -3,16 +3,22 @@ import asyncio
 from pyrogram import Client
 from importlib import import_module
 
-async def main():
-    await Bot.start()
-    await Yuu.starr()
-    os.system("rm -rf *session*")
-    await asyncio.Event().wait()
+async def start_clients() -> None:
+    log.info("Starting pyrogram client...")
+
+    await asyncio.gather(App.start(), Bot.start())
+    log.info("Pyrogram clients started.")
 
 
-print("Berhasil menjalankan semua module!")
+async def stop_clients():
+    log.info("Stopping pyrogram client...")
+
+    await asyncio.gather(App.stop(), Bot.stop())
+    log.info("Pyrogram clients stopped.")
 
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop_policy().get_event_loop()
-    loop.run_until_complete(main())
+    import aiorun
+
+    aiorun.logging.disable = True
+    aiorun.run(start_clients(), loop=App.loop, shutdown_callback=stop_clients())
