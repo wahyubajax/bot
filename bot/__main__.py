@@ -11,7 +11,6 @@ async def main():
     await Yuu.start()
     await asyncio.gather(*tasks, Yuu.start(), Bot.start())
     await asyncio.gather(loadPlugins()
-
 print("start")
 
 if __name__ == "__main__":
