@@ -2,7 +2,7 @@ import os
 import time
 import logging
 
-from program import Client
+from pyrogram import Client
 from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardMarkup, InlineQueryResult
 
