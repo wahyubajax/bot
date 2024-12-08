@@ -1,23 +1,18 @@
 import os
 import asyncio
-from pyrogram import Client
-from importlib import import_module
 
-async def start_clients() -> None:
-    log.info("Starting pyrogram client...")
-
-    await asyncio.gather(App.start(), Bot.start())
-    log.info("Pyrogram clients started.")
+from bot import Yuu, Bot
 
 
-async def stop_clients():
-    log.info("Stopping pyrogram client...")
-
-    await asyncio.gather(App.stop(), Bot.stop())
-    log.info("Pyrogram clients stopped.")
+async def main():
+    await Yuu.start()
+    await Bot.start()
+    await loadPlugins()
+    os.system("rm -rf *session*")
+    await asyncio.Event().wait()
 
 
 if __name__ == "__main__":
+    loop = asyncio.get_event_loop_policy().get_event_loop()
+    loop.run_until_complete(main())
 
-    loop.logging.disable = True
-    loop.run(start_clients(), loop=App.loop, shutdown_callback=stop_clients())
