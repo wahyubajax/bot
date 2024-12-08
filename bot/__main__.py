@@ -3,6 +3,7 @@ import config
 import asyncio
 from importlib import import_module
 
+from pyrogram import idle
 from bot import Yuu , Bot
 from pyrogram import Client
 
@@ -11,6 +12,7 @@ async def main():
     await Yuu.start()
     await pyrogram.idle()
     await asyncio.gather(*tasks, Yuu.start(), Bot.start())
+    await asyncio.gather(loadPlugins(), idle())
 
 print("start")
 
