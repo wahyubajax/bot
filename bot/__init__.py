@@ -73,7 +73,6 @@ Yuu = Client(
   api_hash=API_HASH,
   session_string=SESSION,
   parse_mode=ParseMode.HTML,
-  plugins=dict(root="bot"),
 )
 
 # Bot nya
@@ -84,5 +83,4 @@ Bot = Client(
   bot_token=BOT_TOKEN,
   in_memory=False,
   parse_mode=ParseMode.HTML,
-  plugins=dict(root="bot"),
 )
