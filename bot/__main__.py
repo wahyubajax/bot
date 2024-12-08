@@ -18,7 +18,6 @@ async def stop_clients():
 
 
 if __name__ == "__main__":
-    import aiorun
 
-    aiorun.logging.disable = True
-    aiorun.run(start_clients(), loop=App.loop, shutdown_callback=stop_clients())
+    loop.logging.disable = True
+    loop.run(start_clients(), loop=App.loop, shutdown_callback=stop_clients())
