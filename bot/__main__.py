@@ -1,6 +1,8 @@
 import os
 import config
+
 from bot import Yuu , Bot
+from pyrogram import Client
 
 async def main():
     await Bot.start()
@@ -8,7 +10,7 @@ async def main():
     await pyrogram.idle()
     await asyncio.gather(*tasks, Yuu.start(), Bot.start())
 
-print(Bot_start)
+print(start)
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop_policy().get_event_loop()
