@@ -55,7 +55,7 @@ async def process_command(message, command):
 
 
 @Bot.on_message(~filters.bot & filters.me & filters.command("eval",prefixes=config.PREFIXES))
-async def evaluate(app , message):
+async def evaluate(bot , message):
     if not get_arg(message):
         return await message.reply("none")
     cmd = message.text.split(maxsplit=3)[1]
