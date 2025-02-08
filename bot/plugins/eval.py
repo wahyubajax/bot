@@ -13,6 +13,7 @@ import pyrogram
 import html
 import time
 import uuid
+import config
 
 from time import time
 from datetime import date
