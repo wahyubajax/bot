@@ -92,7 +92,7 @@ Yuu = Client(
   name="Yuu",
   api_id=API_ID,
   api_hash=API_HASH,
-  session_string=SESSION,
+  session_string=SESSION_STRING,
   parse_mode=ParseMode.HTML,
   plugins={"root": "bot/modules"},
 )
