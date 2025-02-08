@@ -6,7 +6,7 @@ from pyrogram import Client
 from pyrogram.enums import ParseMode
 from pyrogram.handlers import MessageHandler
 from pyrogram.types import InlineKeyboardMarkup, InlineQueryResult
-from config import API_ID, API_HASH, BOT_TOKEN, SESSION
+from config import *
 
 StartTime = time.time()
 
