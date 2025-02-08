@@ -23,7 +23,6 @@ import psutil
 from meval import meval
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from userbot import HANDLER
 from pyrogram import enums
 from pyrogram import raw
 from bot import Yuu, Bot
