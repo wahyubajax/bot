@@ -18,7 +18,6 @@ from time import time
 from datetime import date
 from io import BytesIO, StringIO
 from io import BytesIO
-from userbot import *
 import psutil
 
 from meval import meval
@@ -27,7 +26,7 @@ from pyrogram.types import Message
 from userbot import HANDLER
 from pyrogram import enums
 from pyrogram import raw
-
+from bot import Yuu, Bot
 from pyrogram import Client, filters
 from pyrogram.types import (
     InlineKeyboardButton,
