@@ -1,12 +1,13 @@
 import os
 
-API_ID = int(os.getenv("API_ID", "28256130"))
-API_HASH = os.getenv("API_HASH", "37b94b573bb3e34a63fc9e6e9250ce7a")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7743669182:AAFkT8Slh5upv-lOK9irf7X0zy_iDssVcyc")
-OWNER_ID = int(os.getenv("OWNER_ID", "6111508566"))
+
+API_ID = int(os.getenv("API_ID", "21916107"))
+API_HASH = os.getenv("API_HASH", "772494d5fd3dd2ef55e02dc965ecacea")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7625679291:AAHXMBzrCmKqqyjW2Vi_ODkua_PDpYcSleo")
+OWNER_ID = int(os.getenv("OWNER_ID", "5654247585"))
 COMMAND = os.getenv("COMMAND", ". , : ; !")
 PREFIX = COMMAND.split()
-SESSION = os.getenv(
-    "SESSION",
-    "BQGvJ4IAGeB4x-if3HkJElE4_OD_t1wACzi23u3hoI19sqeePW-55CzXtY1ixB03PB0FJQilTjqcRMvUloz0tjKnffy1vKTlrWwnZ4bXWJk1cUZy6noW19p7SLHZCRq6-4xpNlHAWpCgecBQieXa-dCvZ5En4mcMxwMiJ3_HuKWU29nfT9reTsRbUDk8XtPiZUBIzJE548iI14SJgm9prs6c5Cxs6QhXToBvpWkVcxw0xrOSDcX-9O-RFIANy8x5ACv1B5he77XhrhQi42TGqEsEcBNtqp3fThOrJDXSikazHkPNuoYOcJXSsBnKyxZp1kDUDA16p0PE4B4lwwmfGcsyuFFXrQAAAAFsRjhWAA"
+SESSION_STRING = os.getenv(
+    "SESSION_STRING",
+    "BQFOacsAEaE7Tbw8EON5UnPBQaVcrV2RxzTVIyT5lnyQhvYjyIwv0lN2VvUXWnVd0rW6qg7Qbz-vT01ZbOuXFhEUFxlYFxIXwGE0bryYgPz9dnTwyzWol2YJZWQj7pZd4te8S8CrgeXKI_izpAiZ9UB9wQsHT8muUa2UDz2a43NyKGSPaSBOhK5JgODih9ISgan8qORGa38MqU5idW02yctZGsRDpm5NSAAln_IJ_8OzhyuUP0pUQKVSZPxVii0Upqdp5mCVNh6w0McnGh7CH5MU1Tp7naGb85fWMqkdPtGiw44WU43fluclxTCZXsp9o2meQLNaRB-vwYZ1IvkV0lIAXGnTkAAAAAFRBPihAA"
 )
