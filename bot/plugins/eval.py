@@ -53,7 +53,7 @@ async def process_command(message, command):
 
 
 
-@bot.on_message(filters.command(["e"], prefixes=HANDLER) & filters.user(me))
+@Bot.on_message(filters.command(["e"], prefixes=HANDLER) & filters.user(me))
 async def _(client: "bot", message):
     if not get_arg(message):
         return await message.reply("none")
