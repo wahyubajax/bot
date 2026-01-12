@@ -1,7 +1,7 @@
 import os
 import asyncio
 from importlib import import_module
-from bot import Yuu, Bot
+from __init__ import Yuu, Bot
 
 
 async def main():
